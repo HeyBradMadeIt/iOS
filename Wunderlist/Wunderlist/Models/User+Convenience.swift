@@ -22,5 +22,4 @@ extension User {
         self.password = password
     }
     
-    
 }

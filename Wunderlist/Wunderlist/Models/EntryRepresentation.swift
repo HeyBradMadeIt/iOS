@@ -9,7 +9,7 @@
 import Foundation
 
 struct EntryRepresentation: Codable {
-    var identifier: String
+    var identifier: Int32
     var title: String
     var bodyDescription: String
     var important: Bool
@@ -17,11 +17,11 @@ struct EntryRepresentation: Codable {
     var date: Date
     
     enum CodingKeys: String, CodingKey {
-        case identifier
-        case title
+        case identifier = "id"
+        case title = "title"
         case bodyDescription = "description"
         case important
         case completed
-        case date
+        case date = "date_time"
     }
 }
